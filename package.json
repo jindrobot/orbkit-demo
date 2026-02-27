@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "next": "16.1.6",
-    "orbkit": "file:../../../../../../private/tmp/orbkit-src/packages/core",
+    "orbkit": "file:lib/orbkit",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
