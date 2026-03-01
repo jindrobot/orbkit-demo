@@ -297,7 +297,7 @@ function OrbCanvas({ preset }: { preset: Preset }) {
     window.addEventListener("resize", resize);
     resize();
 
-    let targetHover = 0;
+    let targetHover = 0.2;
     let currentRot = 0;
     let lastTime = 0;
 
@@ -307,7 +307,7 @@ function OrbCanvas({ preset }: { preset: Preset }) {
       const y = ((e.clientY - rect.top) / rect.height - 0.5) * 2;
       targetHover = Math.sqrt(x * x + y * y) < 0.8 ? 1 : 0;
     };
-    const handleMouseLeave = () => { targetHover = 0; };
+    const handleMouseLeave = () => { targetHover = 0.2; };
 
     container.addEventListener("mousemove", handleMouseMove);
     container.addEventListener("mouseleave", handleMouseLeave);
